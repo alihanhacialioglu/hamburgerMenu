@@ -1,0 +1,168 @@
+*{
+	margin:0%;
+	padding:0%;
+	box-sizing: border-box;
+}
+.menu{
+	height: 40px;
+	width: 100%;
+	position: relative;
+	background-color: aqua;
+}
+.left-side{
+	
+	width: 20%;
+	height: 100%;
+	display: inline-block;
+	position: absolute;
+	left:0px;
+	top:0px;
+
+}
+.logo{
+	float:right;
+	height: 100%;
+	line-height:35px;
+	margin-right: 10px;
+}
+.hamburger{
+width: 20%;
+margin: 10px 3px;
+cursor:pointer;
+display:none;
+border-radius: 5%;
+
+}
+.line{
+	
+	background-color: rgb(53, 50, 50);
+	height: 3px;
+	border-radius: 3px;
+	width: 28px;
+	padding:1px 0px;
+	margin-top:2px;
+	transition:0.5s;	
+}
+.right-side{
+	
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	position: absolute;
+	top:0px;
+	left:20%;
+	
+	
+}
+.menu-name{
+	float:left;
+	height: 100%;
+	cursor:pointer;
+	line-height:35px;
+	margin-left: 15px;
+	font-size: 15px;
+	
+	
+}
+#menu-hizmet:hover .hizmet-tutucu{
+	display: block;
+}
+#menu-sirket:hover .sirket-tutucu{
+	display:block;
+	
+}
+.menu-name:hover{
+	color:rgb(193, 183, 183);
+}
+.alt-menu{
+	background-color: aqua;
+	cursor:pointer;
+	padding:0px 3px;
+}
+.hizmet-tutucu{
+	display:none;
+	color:black;
+}
+.sirket-tutucu{
+	
+	display:none;
+	color:black;
+	
+}
+.alt-menu:hover{
+	color:rgb(193, 183, 183);
+	
+}
+.content{
+	height: 1000px;
+	background-color: yellowgreen;
+}
+.slide-menu{
+height: 480px;
+width: 25%;
+background-color: blue;
+position: absolute;
+left:-27%;
+transition: 1s;
+font-size: 13px;
+
+}
+.slide-menu-name{
+	border: 1px solid black;
+	color:aliceblue;
+	cursor:pointer;
+	line-height:35px;
+	height: 8%;
+	position: relative;
+	padding-left: 10px;
+}
+.slide-menu-name:hover{
+	color:rgb(193, 183, 183);
+}
+.slide-sirket-tutucu{
+	display: none;
+	
+}
+.slide-hizmet-tutucu{
+	display: none;
+}
+.slide-alt-menu{
+	color:black;
+	padding-left: 10px;
+	border-top: 1px solid red;
+	
+}
+.slide-alt-menu:hover{
+	color:rgb(193, 183, 183);
+}
+#slide-sirket img{
+	width:20px;
+	height:20px;
+	margin-left:15px;
+	
+}
+#slide-hizmet img{
+	width:20px;
+	height:20px;
+	margin-left:22px;
+	
+
+}
+@media(max-width: 992px){
+	 .menu-name{
+        width:95px ;
+        font-size:10px;
+    }
+	
+}
+@media(max-width: 768px){
+.hamburger{display: inline-block;}
+.right-side{display:none;}
+}
+@media(max-width: 600px){
+	.slide-menu{font-size: 10px;}
+	#slide-sirket img{width: 15px;
+	height: 15px;}
+	#slide-hizmet img{width: 15px;
+		height: 15px;}}
+	}

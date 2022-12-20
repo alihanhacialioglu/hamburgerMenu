@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onresize="updateScreen()">
+
+	<div class="menu">
+		<div class="left-side">
+			<div class="hamburger" onclick="hamburgerOpenClose()">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+			<div class="logo">OlaTV</div>
+
+		</div>
+		<div class="right-side">
+
+			<div class="menu-name">Ana Sayfa</div>
+			<div class="menu-name">Hakkimizda</div>
+			<div class="menu-name" id="menu-sirket">Şirket Tarihçesi
+				<div class="sirket-tutucu">
+					<div class="alt-menu">Yöneticilerimiz</div>
+					<div class="alt-menu">Çalisanlarimiz</div>
+					<div class="alt-menu">Faaliyetlerimiz</div>
+				</div>
+			</div>
+			<div class="menu-name" id="menu-hizmet">Hizmetlerimiz
+				<div class="hizmet-tutucu">
+					<div class="alt-menu">Web Tasarim</div>
+					<div class="alt-menu">Hosting</div>
+					<div class="alt-menu">Logo Tasarimi</div>
+					<div class="alt-menu">Danişmanlik</div>
+
+				</div>
+			</div>
+			<div class="menu-name">Referanslarimiz</div>
+			<div class="menu-name">İletişim</div>
+
+		</div>
+	</div>
+	<div class="content">
+		<div class="slide-menu">
+
+			<div class="slide-menu-name">Ana Sayfa</div>
+			<div class="slide-menu-name">Hakkimizda</div>
+			<div class="slide-menu-name" id="slide-sirket" onclick="sirket('slide-sirket')">Şirket Tarihçesi
+				<img src="css/downward-arrow.png" id="sirket-arrow">
+				<div class="slide-sirket-tutucu">
+					<div class="slide-alt-menu">Yöneticilerimiz</div>
+					<div class="slide-alt-menu">Çalisanlarimiz</div>
+					<div class="slide-alt-menu">Faaliyetlerimiz</div>
+				</div>
+			</div>
+			<div class="slide-menu-name" id="slide-hizmet" onclick="hizmet('slide-hizmet')">Hizmetlerimiz
+				<img src="css/downward-arrow.png" id="hizmet-arrow" >
+				<div class="slide-hizmet-tutucu">
+					<div class="slide-alt-menu">Web Tasarim</div>
+					<div class="slide-alt-menu">Hosting</div>
+					<div class="slide-alt-menu">Logo Tasarimi</div>
+					<div class="slide-alt-menu">Danişmanlik</div>
+
+				</div>
+			</div>
+			<div class="slide-menu-name">Referanslarimiz</div>
+			<div class="slide-menu-name">İletişim</div>
+
+
+		</div>
+	</div>
+	<script src="script/script.js"></script>
+</body>
+
+</html>
